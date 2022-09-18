@@ -90,6 +90,8 @@ public class SignupActivity extends AppCompatActivity {
                     try {
                         JSONObject object = new JSONObject(response.body().getAsJsonObject().toString());
                         Toast.makeText(SignupActivity.this, "" + object.getString("message"), Toast.LENGTH_SHORT).show();
+                        /*Git test*/
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
