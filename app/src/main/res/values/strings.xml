@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NextSstep</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="me">Email</string>
+    <string name="loginTxt">Already have an account? <b>Login!</b></string>
+    <string name="heading"><b>Sign up</b></string>
+    <string name="heading2"><b>Login</b></string>
+    <string name="heading3"><b>Forgot Password</b></string>
+    <string name="heading4"><b>Verification</b></string>
+    <string name="signupTxt">Donot have an account? <b>SignUp!</b></string>
+    <string name="signup"><b>Create Account </b></string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="donot_have_an_account_signup">Donot have an account? SignUp!</string>
+    <string name="sign_up">Donot_have_an_account_SignUp!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_forgetpassword">Forgetpassword</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
