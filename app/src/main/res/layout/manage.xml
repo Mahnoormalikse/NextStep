@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="497dp"
-            android:layout_height="146dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/whiteOpacity"
             android:orientation="horizontal">
@@ -31,17 +31,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="136dp"
                     android:background="@color/black"
                     android:orientation="vertical"
                     android:padding="20dp">
 
 
                     <TextView
-                        android:layout_width="286dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center"
-                        android:gravity="center"
+                        android:layout_width="385dp"
+                        android:layout_height="88dp"
                         android:text="Admin Side"
                         android:textAlignment="center"
                         android:textColor="@color/whiteOpacity"
@@ -82,7 +80,7 @@
                     android:text="  Manage Student"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -124,7 +122,7 @@
                     android:text="  Manage Teacher"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -166,7 +164,7 @@
                     android:text="Generate Report"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold" />
 
                 <ImageView

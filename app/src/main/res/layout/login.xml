@@ -19,7 +19,7 @@
         android:text="@string/heading2"
         android:textColor="#BAFFFFFF"
         android:textSize="50dp"
-        android:textStyle="italic" />
+        android:textStyle="bold" />
 
 
     <EditText

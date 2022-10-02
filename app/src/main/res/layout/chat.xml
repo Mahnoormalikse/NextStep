@@ -5,15 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".chat"
     android:background="@drawable/black2">
-<TextView
-    android:id="@+id/chat"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Chat"
-    android:textColor="@color/whiteOpacity"
-    android:layout_marginStart="30dp"
-    android:textSize="50sp"
-    android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Chat"
+        android:textColor="@color/whiteOpacity"
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/box"

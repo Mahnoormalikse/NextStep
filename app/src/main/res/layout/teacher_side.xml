@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="651dp"
-            android:layout_height="205dp"
+            android:layout_height="158dp"
             android:layout_gravity="center"
             android:background="@color/whiteOpacity"
             android:orientation="horizontal">
@@ -82,7 +82,7 @@
                     android:text="Announcements"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -124,7 +124,7 @@
                     android:text="Upload Schedule"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -166,7 +166,7 @@
                     android:text="Upload Tests"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -208,7 +208,7 @@
                     android:text=" Manage Students"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     android:textStyle="bold" />
 
                 <ImageView
