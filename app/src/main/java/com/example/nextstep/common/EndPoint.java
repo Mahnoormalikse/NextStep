@@ -7,8 +7,8 @@ public class EndPoint {
 // public static final String IMAGE_URL = "https://savage-absence.000webhostapp.com/AllInOneAPI/api";
 
     //Local Paths
-  public static final String BASE_URL = "http://192.168.0.116/NextstepAPI/";
-  public static final String IMAGE_URL = "http://192.168.0.116/NextstepAPI/api";
+    public static final String BASE_URL = "http://192.168.100.126/NextstepAPI/";
+    public static final String IMAGE_URL = "http://192.168.100.126/NextstepAPI/api";
 
     public static final String MAP_URL = "https://maps.googleapis.com/maps/api/";
 

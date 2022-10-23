@@ -9,6 +9,6 @@ public class history_report extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboad);
+        setContentView(R.layout.dashboard);
     }
 }

@@ -78,10 +78,12 @@ public class SignupActivity extends AppCompatActivity {
         progressDialog.setTitle("Registration");
         progressDialog.setMessage("please wait...");
         progressDialog.show();
+        progressDialog.setCancelable(false);
 
         CustomerSignupService service = RetrofitClient.getClient().create(CustomerSignupService.class);
         Customer customer = new Customer(name.getText().toString(), email.getText().toString(), pass.getText().toString());
-        Call<JsonObject> call = service.customer_signup(customer);
+        Call<JsonObject> call = service.customer_signup(name.getText().toString().trim(),
+                email.getText().toString(), pass.getText().toString());
         call.enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
