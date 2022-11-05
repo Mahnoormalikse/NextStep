@@ -10,10 +10,14 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
-public interface CustomerSignupService {
+public interface Retrofit_Interface {
 
     @Headers({"Accept: application/json"})
     @FormUrlEncoded
-    @POST(EndPoint.CUSTOMER_SIGNUP_URL)
-    Call<JsonObject> customer_signup(@Field("name") String name, @Field("email") String email, @Field("password") String password);
+    @POST(EndPoint.REGISTER)
+    Call<Object> register(
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("password") String password
+    );
 }

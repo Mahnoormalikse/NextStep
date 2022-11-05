@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black2"
+    >
+
+
+    <TextView
+        android:id="@+id/heading5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:inputType="textPersonName"
+        android:paddingStart="30dp"
+        android:text="Help"
+        android:textColor="@color/whiteOpacity"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading5"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="25dp"
+        android:inputType="textPersonName"
+        android:text="Contact us at:"
+        android:textColor="@color/whiteOpacity"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/heading5"
+        android:layout_centerHorizontal="true"
+        android:background="@color/whiteOpacity"
+        android:src="@drawable/help" />
+
+    <EditText
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading5"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/et_bg"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:text="Email: mahnoorse1@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/help2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/et_bg"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:text="Phone: 03325579551"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/h3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help2"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="-325dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/et_bg"
+        android:hint="I need help with e.g"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="211dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/h3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="156dp"
+        android:backgroundTint="@color/black"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:textSize="20dp"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
