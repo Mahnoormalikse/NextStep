@@ -15,6 +15,7 @@ public class EndPoint {
     public static final String NEARBY_PLACES = MAP_URL + "place/nearbysearch/json?";
     public static final String LOGIN = BASE_URL + "api/StudentLogin.php";
     public static final String REGISTER = BASE_URL + "api/CreateUserAPI.php";
+    public static final String CREATETEACHERPROFILE = BASE_URL + "api/CreateTeacherProfile.php";
     public static final String CUSTOMER_SIGNUP_URL = BASE_URL + "api/CreateCustomerAccountAPI.php";
     public static final String MECHANIC_SIGNUP_URL = BASE_URL + "api/CreateMechanicAccountAPI.php";
     public static final String WORKSHOP_SIGNUP_URL = BASE_URL + "api/CreateWorkshopMechanicAccountAPI.php";

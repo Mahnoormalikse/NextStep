@@ -20,4 +20,14 @@ public interface Retrofit_Interface {
             @Field("email") String email,
             @Field("password") String password
     );
+
+    @POST(EndPoint.CREATETEACHERPROFILE)
+    Call<Object> createTeacherProfile(
+            @Field("id") int id,
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("qualification") String qualification,
+            @Field("gender") String gender,
+            @Field("specilization") String specilization
+    );
 }

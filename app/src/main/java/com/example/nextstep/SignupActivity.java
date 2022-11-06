@@ -4,27 +4,23 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.nextstep.common.Constant;
 import com.example.nextstep.model.Customer;
 import com.example.nextstep.network.RetrofitCongClass;
-import com.example.nextstep.services.Retrofit_Interface;
 import com.example.nextstep.ui.login.LoginActivity;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
-import okhttp3.MediaType;
-import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -35,6 +31,8 @@ public class SignupActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     EditText name, email, pass, rePass;
     Button createAcc;
+    RadioButton studentRb, teacherRb;
+    int type;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -51,13 +49,10 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     private void setUpClicks() {
-        loginTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent signupIntent = new Intent(SignupActivity.this, LoginActivity.class);
-                startActivity(signupIntent);
-                finish();
-            }
+        loginTv.setOnClickListener(view -> {
+            Intent signupIntent = new Intent(SignupActivity.this, LoginActivity.class);
+            startActivity(signupIntent);
+            finish();
         });
         createAcc.setOnClickListener(view -> {
          /*   if (pass.getText().toString().trim().equals(rePass.getText().toString().trim()))
@@ -65,7 +60,14 @@ public class SignupActivity extends AppCompatActivity {
             else Toast.makeText(this, "Check confirm password", Toast.LENGTH_SHORT).show();*/
             CustomerSignUp();
         });
-
+        studentRb.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b)
+                type = Constant.STUDENT;
+        });
+        teacherRb.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b)
+                type = Constant.TEACHER;
+        });
     }
 
     private void initViews() {
@@ -74,6 +76,8 @@ public class SignupActivity extends AppCompatActivity {
         pass = findViewById(R.id.passEt);
         rePass = findViewById(R.id.repassEt);
         createAcc = findViewById(R.id.signupBtn);
+        studentRb = findViewById(R.id.studentRb);
+        teacherRb = findViewById(R.id.teacherRb);
     }
 
     public void CustomerSignUp() {
@@ -97,7 +101,11 @@ public class SignupActivity extends AppCompatActivity {
                                 if(error){
                                     Toast.makeText(SignupActivity.this, message, Toast.LENGTH_SHORT).show();
                                 }else {
-
+                                    if (type == Constant.TEACHER) {
+                                        startActivity(new Intent(SignupActivity.this, createTeacherProfile.class));
+                                    } else if (type == Constant.STUDENT) {
+                                        startActivity(new Intent(SignupActivity.this, edit_profile.class));
+                                    }
                                     Toast.makeText(SignupActivity.this, message, Toast.LENGTH_SHORT).show();
                                 }
                                 Log.d("RegResponse", "onResponse: "+jsonObject);

@@ -102,7 +102,7 @@
         android:layout_height="68dp"
         android:layout_below="@+id/repassEt"
         android:layout_centerInParent="true"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="42dp"
         android:layout_marginEnd="156dp"
         android:backgroundTint="@color/black"
         android:text="@string/signup"
@@ -110,6 +110,32 @@
         android:textColorHint="@android:color/holo_orange_dark"
         android:textSize="18dp"
         tools:ignore="TextContrastCheck" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassEt"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/teacherRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher"
+            android:textColor="@color/whiteOpacity" />
+
+        <RadioButton
+            android:id="@+id/studentRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Student"
+            android:textColor="@color/whiteOpacity">
+
+        </RadioButton>
+    </RadioGroup>
 
     <TextView
         android:id="@+id/signupLogintv"
