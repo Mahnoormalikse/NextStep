@@ -30,4 +30,10 @@ public interface Retrofit_Interface {
             @Field("gender") String gender,
             @Field("specilization") String specilization
     );
+    @POST(EndPoint.CREATE_STUDENT_PROFILE)
+    Call<Object> createtudentProfile(
+            @Field("id") int id,
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("gender") String gender);
 }

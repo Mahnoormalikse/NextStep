@@ -46,7 +46,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/name1"
+            android:id="@+id/stname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -79,7 +79,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/email1"
+            android:id="@+id/stemail"
             android:layout_width="match_parent"
             android:background="@android:color/transparent"
             android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/gender1"
+            android:id="@+id/stgender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -122,6 +122,8 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
+
+
     <Button
         android:id="@+id/savebt"
         android:layout_width="173dp"

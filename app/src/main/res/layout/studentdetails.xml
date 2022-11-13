@@ -45,13 +45,13 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_weight="1"
             android:padding="5dp"
-            android:text="@string/app_name"
+            android:background="@android:color/transparent"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
@@ -76,13 +76,13 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_weight="1"
             android:padding="5dp"
-            android:text="@string/app_name"
+            android:background="@android:color/transparent"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
@@ -107,13 +107,13 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_weight="1"
             android:padding="5dp"
-            android:text="@string/app_name"
+            android:background="@android:color/transparent"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
@@ -124,28 +124,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/et_bg"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start"
-            android:padding="5dp"
-            android:text="ID"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:text="@string/app_name"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-    </LinearLayout>
+        android:orientation="horizontal"/>
 
 </LinearLayout>
